@@ -10,6 +10,7 @@ from typing import Any
 def del_by_index(collection: list, value: Any) -> list:
     collection_copy = deepcopy(collection)
     # TODO вставить код сюда
+    collection_copy.remove(value)
     return collection_copy
 
 

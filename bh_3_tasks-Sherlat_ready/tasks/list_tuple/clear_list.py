@@ -26,6 +26,7 @@ user_data = {
 def clear_list(collection: list) -> list:
     collection_copy = deepcopy(collection)
     # TODO вставить код сюда
+    collection_copy.clear()
     return collection_copy
 
 

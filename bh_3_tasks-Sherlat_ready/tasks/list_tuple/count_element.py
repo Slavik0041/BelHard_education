@@ -9,7 +9,7 @@ from typing import Any
 
 def count_elements(collection: list, element: Any) -> int:
     # TODO вставить код сюда
-    count = None
+    count = collection.count(element)
     return count
 
 

@@ -9,7 +9,7 @@ from copy import deepcopy
 def reverse_list(collection: list) -> list:
     collection_copy = deepcopy(collection)
     # TODO вставить код сюда
-    return collection_copy
+    return collection_copy[::-1]
 
 
 if __name__ == '__main__':

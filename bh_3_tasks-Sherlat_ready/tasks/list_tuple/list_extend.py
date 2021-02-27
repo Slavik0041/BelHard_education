@@ -9,6 +9,7 @@ from copy import deepcopy
 def list_extend(first_list: list, second_list: list) -> list:
     result = deepcopy(first_list)
     # TODO объединить result и second_list
+    result += second_list
     return result
 
 
