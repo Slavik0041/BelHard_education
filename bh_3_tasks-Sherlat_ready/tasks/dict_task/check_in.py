@@ -18,7 +18,6 @@ check_in('GroveGang') -> True
 """
 from typing import Any
 
-
 USERS = {
     'hateSwimming': {
         'first_name': 'Tomy',
@@ -35,7 +34,7 @@ USERS = {
 
 def check_in(users: dict, key: Any) -> bool:
     # TODO вставить код сюда
-    result = None
+    result = USERS.get(key)
     return result
 
 
