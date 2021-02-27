@@ -10,6 +10,7 @@ from typing import Any
 def del_by_value(collection: set, value: Any) -> set:
     collection_copy = deepcopy(collection)
     # TODO вставить код сюда
+    collection_copy.remove(value)
     return collection_copy
 
 

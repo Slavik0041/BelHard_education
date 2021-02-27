@@ -10,7 +10,10 @@
 
 def has_common(set_1: set, set_2: set) -> bool:
     # TODO вставить код сюда
-    result = None
+    if set_1.intersection(set_2):
+        result = True
+    else:
+        result = False
     return result
 
 
