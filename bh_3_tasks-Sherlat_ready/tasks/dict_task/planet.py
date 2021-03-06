@@ -31,7 +31,7 @@ dict_planet = {'1': 'Меркурий',
 
 
 def get_planet_name(planet_num: int) -> str:
-    result = dict_planet.setdefault(str(planet_num))
+    result = dict_planet.get(str(planet_num))
     return result
 
 

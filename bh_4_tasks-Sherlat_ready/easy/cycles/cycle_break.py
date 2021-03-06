@@ -15,7 +15,8 @@ def lets_break() -> int:
     counter = 0
     while True:
         counter += 1
-        # TODO тут написать код
+        break
+    counter = 10
     return counter
 
 

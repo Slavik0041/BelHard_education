@@ -36,7 +36,7 @@ def month_to_season(month: int) -> str:
     :return: название сезона, например "зима"
     :rtype: str
     """
-    season = dict_season.setdefault(str(month))
+    season = dict_season.get(str(month))
     return season
 
 
