@@ -12,8 +12,7 @@ num_sum(321) -> 6
 
 
 def num_sum(numb: int) -> int:
-    result = None
-    return result
+    return sum(map(int, str(numb)))
 
 
 if __name__ == '__main__':

@@ -15,10 +15,18 @@ VALUE_LIST = ['a', 'b', 'c', 'd', 'e', 'f']
 
 def list_compose(indexes: list, values: list) -> list:
     result_list = []
-    # TODO тут надо написать цикл for
+    for key in indexes:
+        if key < len(values) and key >= -len(values):
+            result_list.append(values[key])
+        else:
+            result_list.append(None)
     return result_list
 
 
+"""
+Мне кажется данное решение является не совсем корректным
+Больше похоже на использование костылей 
+"""
 if __name__ == '__main__':
     assert list_compose(INDEX_LIST, VALUE_LIST) == ['b', 'f', None, None, 'c', 'd',
                                                     None, 'e']

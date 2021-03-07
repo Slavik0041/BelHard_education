@@ -7,6 +7,9 @@
 
 
 def not_3(array: list) -> list:
+    for element in array:
+        if element % 3 == 0:
+            array.remove(element)
     return array
 
 
