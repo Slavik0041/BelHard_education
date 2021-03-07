@@ -8,12 +8,13 @@
 помощью модуля collections, используя collections.Counter
 """
 
+import collections
+
 
 def common_and_longest(text: str) -> tuple:
-    common = None
-    longest = None
-
-    return common, longest
+    common = collections.Counter(text.split()).most_common(1)
+    longest = max(text.split())
+    return common[0][0], longest
 
 
 if __name__ == '__main__':
