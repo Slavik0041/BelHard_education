@@ -22,3 +22,36 @@ school_data = {
 }
 
 
+def incr_students(data: dict) -> dict:
+    for k, v in data.items():
+        data[k] = v + 1
+    return f'Увеличил кол-во учеников на +1: {data}'
+
+
+def decr_students(data: dict) -> dict:
+    for k, v in data.items():
+        if v > 0:
+            data[k] = v - 1
+    return f'Уменьшил кол-во учеников на -1: {data}'
+
+
+def add_class(data: dict) -> dict:
+    plus_class = {'9a': 0}
+    data.update(plus_class)
+    return f'Добавил класс в школу: {data}'
+
+
+def remove_class(data: dict) -> dict:
+    data.popitem()
+    return f'Отчислил класс за поведение)))): {data}'
+
+
+def calc_students(data: dict) -> dict:
+    return f'Учеников в школе: {sum(set(data.values()))}'
+
+
+print(incr_students(school_data))
+print(decr_students(school_data))
+print(add_class(school_data))
+print(remove_class(school_data))
+print(calc_students(school_data))

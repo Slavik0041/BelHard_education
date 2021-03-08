@@ -6,9 +6,19 @@
 """
 
 
-def calc_sum(*list_n):
-    sum_num = 0
-    for i in list_n:
-        sum_num += i
+def calc_sum(*args):
+    summa = 0
+    for i in args:
+        summa += i
+    return summa
+    # return sum(args)
 
-    return sum(sum_num)
+
+if __name__ == '__main__':
+    some_values = []
+    while True:
+        values = input('Введите число: ')
+        if values == 'stop':
+            break
+        some_values.append(int(values))
+    print(calc_sum(*some_values))

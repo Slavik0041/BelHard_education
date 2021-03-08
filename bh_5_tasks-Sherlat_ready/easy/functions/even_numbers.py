@@ -7,3 +7,21 @@
 - get_even_number(10) -> 20
 - get_even_number(3) -> 6
 """
+
+
+def get_even_number(number: int) -> int:
+    return number * 2
+
+
+print(get_even_number(10))
+"""
+Не совсем понял условие(
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+10 -> находится на 5й позиции четных чисел 
+Нам нужно вводить порядковый номер четного числа (исключая не четные) 
+и выводить само четное ? 
+"""
+
+if __name__ == '__main__':
+    assert get_even_number(5) == 10
+    print('Решено!')

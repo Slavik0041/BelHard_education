@@ -8,13 +8,13 @@
 """
 
 
-def beggest_dict(some_dict: dict = None, **kwargs):
+def biggest_dict(some_dict: dict = None, **kwargs):
     result = some_dict
     if result is None:
         result = {}
 
-        result.update(kwargs)
-        return result
+    result.update(kwargs)
+    return result
 
 
 if __name__ == '__main__':
