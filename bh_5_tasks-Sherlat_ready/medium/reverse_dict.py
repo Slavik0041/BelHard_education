@@ -5,3 +5,24 @@
 
 Тело функции может состоять из одной строки!
 """
+dicts = {1: 'a', 2: 'b', 3: 'c', 4: 'd'}
+
+
+# def reverse_dict(some_dict):
+#     return {v: k for k, v in some_dict.items()}
+
+
+def reverse_dict(some_dict):
+    new_dict = {}
+    for k, v in some_dict.items():
+        new_dict[v] = k
+    return new_dict
+
+
+print(reverse_dict(dicts))
+
+'''
+Пробовал я в одну строку, раз 5 запутался, но получилось
+На след день начал  решать другие задачи и уже сложно было понять 
+логику решения в одну строку, вроде и сам писал, а для понимания сложновато
+'''

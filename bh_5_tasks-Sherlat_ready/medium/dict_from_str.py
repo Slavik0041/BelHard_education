@@ -12,3 +12,16 @@
 }
 """
 STR_VAL = 'python is the fastest-growing major programming language'
+
+
+def dict_from_str(str_str: str):
+    my_dict = {}
+    for key in str_str:
+        if my_dict.get(key):
+            my_dict[key] += 1
+        else:
+            my_dict[key] = 1
+    return my_dict
+
+
+print(dict_from_str(STR_VAL))
