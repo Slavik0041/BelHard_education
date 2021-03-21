@@ -20,3 +20,23 @@ line_print(some_list)
     3
 8
 """
+some_list = [1, 2, [1, 2, [5, 7], 3], 8]
+
+
+def line_print(list_list, coin):
+    for i in list_list:
+        if isinstance(i, list):
+            coin += 4
+            line_print(i, coin)
+            coin -= 4
+        else:
+            x = ' '
+            print(x * coin + str(i))
+
+'''
+Хоть пристрели меня, я пытался с одним аргументом, 
+и гуглил и читал и искал. 
+Я понимаю логику решения, но что бы я не делал, у меня 
+либо синтаксическая ошибка в коде либо билеберда 
+'''
+line_print(some_list, 0)
