@@ -14,3 +14,27 @@ process_doc, который будет печатать "Делаю копию: 
 Создать объект класса MFU. Потренироваться вызывать методы через super,
 через имя класса. Просмотреть MRO
 """
+
+
+class Device:
+    def process_doc(self):
+        raise NotImplementedError
+
+
+class Scanner(Device):
+    def process_doc(self):
+        print(f'Сканирую документ: {name}')
+
+
+class Copier(Device):
+    def process_doc(self):
+        print(f'Делаю копию: {name}')
+
+
+class MFU(Scanner, Copier):
+    def process_doc(self):
+        print(f'Сканирую, отправляю факс: {name}')
+
+
+mfu = MFU()
+print(mfu)
